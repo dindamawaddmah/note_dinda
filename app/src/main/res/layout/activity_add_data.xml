@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddDataActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Judul Tugas"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/edJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Masukkan Judul Tugas"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Tugas"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:maxLines="8"
+        android:gravity="top"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp"
+        android:hint="Masukkan Deskripsi Tugas"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Tugas"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/txTanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dd-MM-yyy"
+        android:textSize="14sp"
+        android:drawableEnd="@drawable/icon_date"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Tugas"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <RadioGroup
+        android:id="@+id/rgStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/rbBelum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum"/>
+
+        <RadioButton
+            android:id="@+id/rbSelesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selesai"
+            android:layout_marginStart="16dp"/>
+
+
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan Data"
+        android:textAllCaps="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Data"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/teal_200"/>
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
